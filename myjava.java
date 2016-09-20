@@ -18,7 +18,8 @@ public class main {
 		this.price = price;
 		this.amount = amount;
 	}
-	public double countValue() {
+	
+ 	public double countValue() {
 		return(amount * price);
 	}
  
@@ -34,3 +35,6 @@ public class main {
 		amount = value;
 	}
 }
+
+ 
+ 
