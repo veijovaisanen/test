@@ -2,6 +2,7 @@
 public class main {
     public static void main(String[] args) { 
     	Product product = new Product("Edam", 3.3, 120);
+		product.changePrice(4.1);
     	System.out.println("Product value is " + product.countValue());
     	product.printProduct();
      }
@@ -15,6 +16,10 @@ public class main {
 		this.name = name;
 		this.price = price;
 		this.amount = amount;
+	}
+	
+	public void changePrice(int value) {
+		price = value;
 	}
 	public double countValue() {
 		return(amount * price);
